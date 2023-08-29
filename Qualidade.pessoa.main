@@ -1,0 +1,11 @@
+def pessoa(name):
+    pessoa1 = Pessoa("João", "M", "123456")
+
+def pessoa(sexo):
+    pessoa2 = Pessoa("João", "M", "123456")
+
+if __name__ == '__main__':
+    print_hi('PyCharm')
+
+if __sexo__ == '__main__':
+    print_hi('PyCharm')
