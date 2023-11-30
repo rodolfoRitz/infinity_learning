@@ -41,4 +41,12 @@
 # Alt + Click : para colocar cursores em várias linhas ao mesmo tempo.
 
 '''Atalhos do Git'''
-# Digite "Git: Clone" e selecione a opção para clonar um repositório do Git.
+# git clone - clona o repositório (pelo codigo selecionado) - criar um arquivo no Github
+
+# git status - verifica se foi feita alguma alteração (antes e depois do "add")
+# git  add . - adiciona os arquivos na intermediária
+# git commit -m "mensagem"
+# git push - subir o commit para o repositório.
+
+# git pull - puxa para sua maquina as últimas alterações do repositório
+# git branch - lista todas as branchs existentes
