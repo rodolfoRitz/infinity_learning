@@ -1,0 +1,192 @@
+Main 
+
+#proxima pergunta da lista. 
+#peça uma nota entre 0 e 10. mostre uma mensagem caso o valor seja inválido e continue pedindo ate o valor ser valido.
+nota = int(input('Informe uma nota entre 0 e 10: ')) 
+ 
+if 0 < nota < 10: 
+    print('Sua nota é: ' + str(nota)) 
+ 
+else: 
+    print('Nota inválida, informe um número entre 0 e 10!') 
+    nota = int(input('Informe uma nota entre 0 e 10: ')) 
+
+Prova A1 
+
+#System.out.print("Informe o número de alunos da turma: "); 
+#numeroAlunos = entrada.nextInt(); 
+#for (int i = 1; i <= numeroAlunos; i++) 
+ 
+#......... 
+ 
+#media das notas e o nmr de alunos reprovados. 
+ 
+from random import randint 
+ 
+numeroAlunos = int(input('Informe o número de alunos da turma: ')) 
+reprovados = 0 
+media = int 
+soma_notas =0 
+ 
+for i in range(0, numeroAlunos): 
+    notas = randint(0, 100) 
+    print('A nota do aluno é: ' + str(notas) + ' pontos.') 
+ 
+    soma_notas += notas 
+    media = soma_notas/numeroAlunos 
+ 
+    if (notas < 70): 
+        reprovados = reprovados + 1 
+ 
+print('O número de alunos reprovados é de: ' + str(reprovados) + ' alunos.') 
+print('A média das notas é de: ' + str(media) + ' pontos.') 
+
+ 
+
+ 
+
+ 
+
+Busca binária 
+
+def pesquisa_binaria(A, item): 
+    #Implementa pesquisa binária iterativamente 
+    esquerda, direita = 0, len(A) - 1 
+    while esquerda <= direita: 
+        meio = (esquerda + direita) // 2 
+        if A[meio] == item: 
+            return meio 
+        elif A[meio] > item: 
+            direita = meio - 1 
+        else: # A[meio] < item 
+            esquerda = meio + 1 
+    return -1 
+ 
+A = [0, 10, 20, 30, 40, 50, 60, 70] 
+ 
+# Busca iterativa por um elemento existente (40) 
+resultado = pesquisa_binaria(A, 40) 
+print('>> Buscando elemento: 40') 
+ 
+if resultado == -1: 
+    print('Busca iterativa: elemento não encontrado!') 
+else: 
+    print('Busca iterativa: elemento encontrado!') 
+ 
+ 
+# Busca iterativa por um elemento inexistente (22) 
+resultado = pesquisa_binaria(A, 22) 
+print('>> Buscando elemento: 22') 
+ 
+if resultado == -1: 
+    print('Busca iterativa: elemento não encontrado!') 
+else: 
+    print('Busca iterativa: elemento encontrado!') 
+
+ 
+
+Busca por elementos 
+
+def pesquisa_binaria_recursiva(A, esquerda, direita, item): 
+    # 1. Caso base: o elemento não está presente. 
+    if direita < esquerda: 
+        return -1 
+ 
+    meio = (esquerda + direita) // 2 
+    # 2. Nosso palpite estava certo: o elemento está no meio do arranjo. 
+    if A[meio] == item: 
+        return meio 
+    # 3. O palpite estava errado: atualizamos os limites e continuamos a busca. 
+    elif A[meio] > item: 
+        return pesquisa_binaria_recursiva(A, esquerda, meio - 1, item) 
+    else: # A[meio] < item 
+        return pesquisa_binaria_recursiva(A, meio + 1, direita, item) 
+ 
+A = [0, 10, 20, 30, 40, 50, 60, 70] 
+ 
+# Busca recursiva por um elemento existente (20) 
+resultado = pesquisa_binaria_recursiva(A, 0, len(A) - 1, 20) 
+print('>> Buscando elemento: 20') 
+ 
+if resultado == -1: 
+    print('Busca recursiva: elemento não encontrado!') 
+else: 
+    print('Busca recursiva: elemento encontrado!') 
+
+ 
+
+Ordenação bolha 
+
+from random import randint 
+ 
+def bubblesort(lista): 
+    for i in range(len(lista)): 
+        for j in range(0, len(lista) - i - 1): 
+            if lista[j] > lista[j + 1]: 
+                lista[j], lista[j+1] = lista[j+1], lista[j] 
+ 
+ 
+if __name__ == '__main__': 
+    lista = [] 
+ 
+    for i in range(10): 
+        lista.append(randint(1, 100)) 
+ 
+ 
+    print('Lista original : ' + str(lista)) 
+ 
+    bubblesort(lista) 
+ 
+    print('Lista ordenada : ' + str(lista)) 
+
+Sorteio 
+
+import streamlit as st 
+ 
+from random import randint 
+ 
+numeroAlunos = int(input('Informe o número de alunos da turma: ')) 
+reprovados = 0 
+media = int 
+soma_notas =0 
+ 
+for i in range(0, numeroAlunos): 
+    notas = randint(0, 100) 
+    print('A nota do aluno é: ' + str(notas) + ' pontos.') 
+ 
+    soma_notas += notas 
+    media = soma_notas/numeroAlunos 
+ 
+    if (notas < 70): 
+        reprovados = reprovados + 1 
+ 
+print('O número de alunos reprovados é de: ' + str(reprovados) + ' alunos.') 
+print('A média das notas é de: ' + str(media) + ' pontos.') 
+
+ 
+
+Teste binário 
+
+def pesquisa_binaria(A, item): 
+    #Implementa pesquisa binária iterativamente 
+    esquerda, direita = 0, len(A) - 1 
+    while esquerda <= direita: 
+        meio = (esquerda + direita) // 2 
+        if A[meio] == item: 
+            return meio 
+        elif A[meio] > item: 
+            direita = meio - 1 
+        else: # A[meio] < item 
+            esquerda = meio + 1 
+    return -1 
+ 
+A = [0, 10, 20, 30, 40, 50, 60, 70] 
+ 
+# Busca iterativa por um elemento existente (40) 
+resultado = pesquisa_binaria(A, 40) 
+print('>> Buscando elemento: 40') 
+ 
+if resultado == -1: 
+    print('Busca iterativa: elemento não encontrado!') 
+else: 
+    print('Busca iterativa: elemento encontrado!') 

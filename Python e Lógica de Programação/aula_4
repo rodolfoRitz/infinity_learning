@@ -1,0 +1,29 @@
+'''
+Crie uma classe Aluno, contendo os seguintes atributos:
+
+nome : texto
+RA: inteiro
+anoNascimento: inteiro
+
+Implemente um método, calcularIdade(), que retorne a idade do aluno no ano de 2022.
+public int calcularIdade( ){
+...
+}
+Crie um método, exibirDados(), que retorne uma string com os dados do aluno:
+Nome: nome do aluno – RA: RA do aluno – Idade: idade do aluno
+public String exibirDados( ){
+...
+}
+
+Crie métodos getters e setters para cada atributo da classe.
+Crie um construtor que receba como parâmetros o nome, RA e ano de nascimento do aluno, e
+que inicialize os atributos do aluno com esses valores.
+Para testar sua classe Aluno, na classe principal do projeto, não é necessária entrada de dados.
+Crie objetos com dados fictícios, e depois execute o método que retorna os dados do aluno.
+Por exemplo:
+Aluno a = new Aluno(“João”, 101010, 1999);
+System.out.println(a.exibir()); // será impresso Nome: João – RA 101010 – Idade: 23
+// Alterar o ano de nascimento do aluno
+a.setAno(1995);
+System.out.println(a.exibir()); // será impresso Nome: João – RA 101010 – Idade: 27
+'''
