@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelinha Fina</title>
+</head>
+<body>
+    <!--A tag 'border', não é mais utilizada. (sempre que o atributo fica branco, não é mais utilizado.) Só os que ficam verdinhos. -->  
+    <table border="1"> 
+        <thead> <!--Define as linhas como topo da tabela.-->
+        <tr> 
+            <th rowspan="2">Modelos automotivos</th> <!--Table header, cabeçario da tabela.-->
+            <th>Marca</th>
+            <th>Ano</th>
+            <th>Valor: </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Volkswagen</td> <!--Table data, dados da tabela.--> 
+<!--colspan="3" Expande de acordo com as colunas.--> 
+<!--rolspan="2" Expande de acordo com as linhas(rol).-->
+            <td>Golf</td>
+            <td>2009</td>
+            <td>R$38.500</td>
+        </tr>
+        <tr>
+            <td>Fiat</td>
+            <td>Palio</td>
+            <td>2010</td>
+            <td>R$19.700</td>
+        </tr>
+        <tr>
+            <td>Honda</td>
+            <td>Civic</td>
+            <td>2012</td>
+            <td>R$61.500</td>
+        </tr>
+        <tr>
+            <td colspan="4">O melhor preço da região</td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>
