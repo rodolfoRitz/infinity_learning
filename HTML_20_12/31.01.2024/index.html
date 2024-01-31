@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Botões</title>
+    <style>
+        /* 
+        Existem 3 tipos de referência: por tag, id e por classe:
+
+        #primeiro-paragrafo  -- Referência por ID.
+        .primeiro-paragrafo  -- Referência por Classe.
+        */
+        /*
+        h1 {color: red} /*   -- Referência por TAG. */
+        /*
+        p {color: blue}
+        button {background-color: orangered; color: green;}
+
+        #sobre h1{color: black;} 
+        #sobre div > p {color: darkgreen;} /* Estes são seletores COMBINADOS */
+        .btn{
+            padding: 8px 12px;
+            border: 2px solid black;
+            border-radius: 50px;
+            margin: 16px;
+            box-sizing: border-box;
+        }
+        /*
+        .quadrado{
+            position: sticky;
+            top: 0px;
+            position: fixed;
+        }
+        #vermelho{
+            background-color: red;
+        }
+        */
+        #barra{
+            position: relative;
+            left: 600px;
+        }
+        #nave{
+            border:  2px solid black;
+        }
+        #imagi{
+            width: 35px;
+
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Este "link" referencia as mudanças de estilo a partir do arquivo CSS. -->
+</head>
+    <nav id="nave">
+        <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2023/11/06/640x853/1_01_flor_de_lis_simbolos_imagem_freepik-31908123.jpg?20231106091659?20231106091659" alt="simbolo" id="imagi">
+        <button class="btn" id="barra">Início</button>
+        <button class="btn" id="barra">Modelos</button>
+    </nav>
+<body>
+<!-- 
+    <h1>My love of my livy</h1>
+    <p> Aqui jaz um texto sobre ela...</p>
+    <button type="submit">Date</button>
+    <section id="sobre">
+        <h1>Sapato</h1>
+        <div>
+            <p>Rapaiiixxxx</p>
+        </div>
+        <article>Guarda chuva</article>
+    </section>
+-->
+    <div class="quadrado" id="vermelho">
+        <p>Paragrafo 1</p>
+    </div>
+    <div class="quadrado" id="verde">
+        <p>Paragrafo 2</p>
+    </div>
+    <div class="quadrado" id="azul">
+        <p>Paragrafo 3</p>
+    </div>
+    
+</body>
+</html>
+
+<!-- Exercício: as propriedades são:
+     color, font-size, font-family, font-weight, font-style.    
+
+    Crie uma aplicação de currículo.
+
+    Três Páginas:
+        - Página Inicial
+            Apresentação
+        - Sobre mim
+            Sobre você
+        - Contato
+            Email
+            Telefone
+-->
