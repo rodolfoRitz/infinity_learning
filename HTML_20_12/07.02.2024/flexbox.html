@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            align-items: flex-end;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            background-color: black;
+            height: 200px;
+        }
+
+        .quadrado {
+            width: 20rem;
+            height: 6.25rem;
+            background-color: blue;
+            border: 5px solid cyan;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+        <div class="quadrado"></div>
+    </div>
+</body>
+</html>
