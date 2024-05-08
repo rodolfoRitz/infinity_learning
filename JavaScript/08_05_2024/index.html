@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lâmpada com MOUSEOVER</title>
+<style>
+
+    #lampada {
+        width: 200px;
+        height: 200px;
+        position: relative;
+    }
+
+</style>
+</head>
+<body>
+
+    <img id="lampadaoff" src="off.png" alt="Lâmpada">
+
+<script>
+
+    var lampada = document.getElementById("lampadaon"); // Obtém a referência para a imagem
+    var lampada = document.getElementById("lampadaoff");
+
+    
+    lampada.addEventListener("mouseover", function() { // Adiciona um evento de mouseover para a imagem
+        lampada.src = "on.png"; // Altera o atributo src para a imagem acesa
+    });
+    
+    lampada.addEventListener("mouseout", function() { // Adiciona um evento de mouseout para a imagem
+        lampada.src = "off.png"; // Altera o atributo src de volta para a imagem apagada
+    });
+
+</script>
+
+</body>
+</html>
