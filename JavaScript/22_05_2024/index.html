@@ -1,0 +1,34 @@
+<!-- Exercicio incompleto, o JS contem o ENUNCIADO -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Products</title>
+</head>
+<body>
+  <form id="categoryForm">
+    <label for="category">Filtrar por categoria:</label>
+    <input type="text" id="category" name="category">
+    <button type="submit">Filtrar</button>
+  </form>
+  <ul id="productList"></ul>
+  <p id="totalValue"></p>
+  <p id="productNames"></p>
+
+  <script src="products.js"></script>
+  <script>
+    // Chama as funções necessárias do arquivo JavaScript quando o DOM é carregado
+    document.addEventListener('DOMContentLoaded', function() {
+      // Exibir todos os produtos inicialmente
+      displayProducts(products);
+
+      // Exibir o valor total inicialmente
+      const totalValueParagraph = document.getElementById('totalValue');
+      const totalValue = calculateTotalValue(products);
+      totalValueParagraph.textContent = `Valor Total: R$ ${totalValue.toFixed(2)}`;
+    });
+  </script>
+</body>
+</html>
