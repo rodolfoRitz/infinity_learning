@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+.container {
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 200px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.card h3 {
+  margin: 0.5rem 0;
+}
+.card p {
+  color: #555;
+}
+.card button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.card button:hover {
+  background-color: #45a049;
+}
+.buttons,
+.filter {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+.filter input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+.carrinho {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-top: 1px solid #ccc;
+}
+.carrinho h2 {
+  margin: 0 0 1rem 0;
+}
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.total {
+  font-weight: bold;
+  text-align: right;
+}
+.carrinho button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #f44336;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.carrinho button:hover {
+  background-color: #e53935;
+}

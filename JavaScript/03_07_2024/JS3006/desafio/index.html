@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacolão Ecommerce</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sacolão Ecommerce</h1>
+    </header>
+    
+    <div class="filter">
+        <input type="text" id="filtro-nome" placeholder="Filtrar por nome" oninput="filtrarFrutas()">
+    </div>
+    
+    <div class="container" id="frutas-container">
+        <!-- Cards de frutas serão adicionados aqui -->
+        <div class="card">
+            <img id="foto" src="https://global.cdn.magazord.com.br/mondiniplantas/img/2021/07/produto/1277/muda-de-abacate-mondini-plantas.jpg?ims=800x800" alt="">
+            <h3 id="nome">Abacate</h3>
+            <p id="preco">R$4,99</p>
+        </div>
+
+    </div>
+
+    <div class="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="itens-carrinho">
+            <!-- Itens do carrinho serão adicionados aqui -->
+        </div>
+        <div class="total">
+            Total: R$<span id="total-carrinho">0</span>
+        </div>
+        <button onclick="limparCarrinho()">Limpar Carrinho</button>
+    </div>
+
+    <div class="buttons">
+        <button onclick="exemploJoin()">Exibir Lista com Join</button>
+        <p id="resultado-join"></p>
+
+        <button onclick="exemploMap()">Dobrar Preços</button>
+        <p id="resultado-map"></p>
+
+        <button onclick="exemploReduce()">Soma Total dos Preços</button>
+        <p id="resultado-reduce"></p>
+
+        <button onclick="exemploFilter()">Filtrar Frutas Baratas</button>
+        <ul id="resultado-filter"></ul>
+
+        <button onclick="exemploForEach()">Exibir Frutas no Console</button>
+
+        <button onclick="exemploSplice()">Remover e Adicionar Frutas</button>
+        <ul id="resultado-splice"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

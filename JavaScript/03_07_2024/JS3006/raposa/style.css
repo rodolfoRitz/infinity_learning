@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(224, 175, 224);
+    padding: 0px;
+    margin: 0px;
+    box-sizing: 0px;
+}
+
+img {
+    height: 200px;
+}
+
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    color: palevioletred;
+}
+
+.burn {
+    background-image: url(img/e6f80be8122d7019c37b39b02dd6ec2c.gif);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 80px;
+}
